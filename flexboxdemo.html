@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container
+  {
+      display: flex;
+      border: 2px solid gray;
+      height: 500px;
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+      flex-direction: row;
+      /* justify-content: center;
+      justify-content: end;
+      justify-content: flex-end;
+      justify-content: space-around; */
+      /* justify-content: space-evenly; */
+      /* align-items: center; */
+      /* align-items: baseline; */
+      /* flex-wrap:wrap-reverse; */
+     /* flex-wrap: wrap;
+     flex-direction: column;
+     flex-wrap: wrap-reverse; */
+/* flex-flow: column wrap; */
+
+  }
+  .item
+  {
+    background-color: red;
+       border : 2px solid green;
+      margin : 2px;
+      width: 120px;
+      height: 122px;
+
+  }
+
+   #item1 
+   { order: 30;
+    flex-grow: 3;
+
+   }
+   #item2 
+   {
+     order:50;
+     flex-grow: 2;
+     flex-shrink: 2;
+   }
+
+   #item3
+   {
+order: 1;
+   }
+   #item4
+   {
+order:10;
+   }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="item" id="item1">  1   </div>
+    <div class="item" id="item2">  2   </div>
+    
+    <div class="item" id="item3">  3   </div>
+    
+    <div class="item" id="item4">  4   </div>
+    
+  </div>
+</body>
+</html>
